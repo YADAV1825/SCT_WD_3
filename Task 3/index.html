@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neon Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <div class="game-container">
+    <h1>Tic Tac Toe <span class="mode">(vs Human)</span></h1>
+
+    <div class="board" id="board"></div>
+
+    <div class="info">
+      <p id="status">Player X's Turn</p>
+      <div class="probabilities">
+        <div class="bar x-bar"><span>X Win Chance</span><div id="xProb" class="fill"></div></div>
+        <div class="bar o-bar"><span>O Win Chance</span><div id="oProb" class="fill"></div></div>
+      </div>
+      <button onclick="restartGame()">Restart</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
